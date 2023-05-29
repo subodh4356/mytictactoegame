@@ -7,6 +7,22 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Check if the browser is an older version of Chrome
+    var isOldChrome = /Chrome\/(\d+)/.test(navigator.userAgent) && +RegExp.$1 < 80;
+
+    if (isOldChrome) {
+      // Display a message or redirect users to a compatibility page
+      alert("Your version of Chrome is not supported. Please upgrade your browser to access this website.");
+      // window.location.href = "compatibility-page.html";
+    } else {
+      // Load your website's main JavaScript file or perform any other initialization
+      $(document).ready(function() {
+        // Your code here
+      });
+    }
+  </script>
   <body>
     <nav>
       <ul>
